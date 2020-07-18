@@ -10,11 +10,11 @@ public class FlightController {
 		
 	}
 	
-	public ArrayList<FlightData> checkFlight(Airport ap1, Airport ap2, LocalDate date){
+	public ArrayList<FlightData> checkFlight(String ap1, String ap2, LocalDate date){
 		
 	}
 	
-	public FlightChair getFlightChair(int flightCode, int chair) {
+	public FlightChair getFlightSeat(int flightCode, int seat) {
 		
 	}
 	
