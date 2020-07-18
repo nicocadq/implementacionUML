@@ -14,11 +14,19 @@ public class FlightController {
 		
 	}
 	
+<<<<<<< HEAD
 	public ArrayList<DataFlight> checkFlight(Airport ap1, Airport ap2, LocalDate date){
 		
 	}
 	
 	public FlightSeat getFlightSeat(int flightCode, int seat) {
+=======
+	public ArrayList<FlightData> checkFlight(String ap1, String ap2, LocalDate date){
+		
+	}
+	
+	public FlightChair getFlightSeat(int flightCode, int seat) {
+>>>>>>> Changed arg and names on methods in  FlightController
 		
 	}
 	
