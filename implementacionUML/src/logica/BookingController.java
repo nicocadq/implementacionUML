@@ -6,11 +6,11 @@ public class BookingController {
 		
 	}
 	
-	public ArrayList<FlightData> checkFlight(Airport ap1, Airport ap2, LocalDate date){
+	public ArrayList<FlightData> checkFlight(String ap1, String ap2, LocalDate date){
 		
 	}
 	
-	public void bookChair(int flightCode, int chair) {
+	public void bookSeat(int flightCode, int seat) {
 		
 	}
 	
