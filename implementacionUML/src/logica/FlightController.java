@@ -2,6 +2,7 @@ package logica;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import logica.FlightSeat;
 
 public class FlightController {
 	private ArrayList<Airport> airports = new ArrayList<Airport>();
@@ -22,7 +23,7 @@ public class FlightController {
 	}
 
 	public FlightSeat getFlightSeat(int flightCode, int seat) {
-		return null;
+		return null; //tiene que retornar en un futuro FlightSeat
 
 	}
 }

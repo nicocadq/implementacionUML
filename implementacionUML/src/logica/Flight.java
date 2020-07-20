@@ -2,11 +2,11 @@ package logica;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import logica.Airplane;
 
 public class Flight {		
-	Airplane airplane = new Airplane();
-	private Airport[] codeAirport = new Airport[2]; //NO debo tener esto asi, debo tener sus atributos
-	private ArrayList<FlightSeat> seatFlight = new ArrayList<FlightSeat>(); //Lo mismo que Airport
+	private Airport[] codeAirport = new Airport[2];
+	private ArrayList<FlightSeat> seatFlight = new ArrayList<FlightSeat>();
 	private int code;
 	private LocalDate fecha;
 	
