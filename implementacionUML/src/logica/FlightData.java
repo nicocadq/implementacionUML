@@ -2,10 +2,10 @@ package logica;
 
 import java.util.ArrayList;
 
-public class DataFlight {
+public class FlightData {
 	private int codigo;
 	private ArrayList<Integer> asientos = new ArrayList<Integer>();
-	public DataFlight(int codigo, ArrayList<Integer> asientos) {
+	public FlightData(int codigo, ArrayList<Integer> asientos) {
 		super();
 		this.codigo = codigo;
 		this.asientos = asientos;

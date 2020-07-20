@@ -3,23 +3,23 @@ package logica;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class Flight {
-	private Airport airport;
-	private ArrayList<FlightSeat> seatFlight = new ArrayList<FlightSeat>();
-	private int codigo;
+public class Flight {		
+	Airplane airplane = new Airplane();
+	private Airport[] codeAirport = new Airport[2]; //NO debo tener esto asi, debo tener sus atributos
+	private ArrayList<FlightSeat> seatFlight = new ArrayList<FlightSeat>(); //Lo mismo que Airport
+	private int code;
 	private LocalDate fecha;
-	private Airplane airplane = new Airplane();
 	
 	public Flight(int codigo, LocalDate fecha) {
 		super();
-		this.codigo = codigo;
+		this.code = codigo;
 		this.fecha = fecha;
 	}
 	public int getCodigo() {
-		return codigo;
+		return code;
 	}
 	public void setCodigo(int codigo) {
-		this.codigo = codigo;
+		this.code = code;
 	}
 	public LocalDate getFecha() {
 		return fecha;
@@ -30,7 +30,7 @@ public class Flight {
 	public boolean esBuscado(String ae1,String ae2, LocalDate fecha) {
 		return false;
 	}
-	public DataFlight getDataVuelo() {
+	public FlightData getDataVuelo() {
 		return null;
 	}
 	public FlightSeat getAsientoVuelo(int asiento) {

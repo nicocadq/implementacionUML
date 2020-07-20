@@ -1,7 +1,11 @@
 package logica;
 
+import java.util.ArrayList;
+import logica.FlightSeat;
+
 public class Airplane {
 	private String enrolment;
+	private ArrayList<Seat> seats = new ArrayList<Seat>();
 
 	public Airplane(String enrolment) {
 		super();
