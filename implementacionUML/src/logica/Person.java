@@ -13,6 +13,11 @@ public class Person {
 		this.tickets = new ArrayList<Ticket>();
 	}
 	
+	public void addTicket(Ticket ticket) {
+		this.tickets.add(ticket);
+	}
+	
+	
 	public Ticket newBooking() {
 		
 	}
