@@ -5,9 +5,11 @@ import java.time.LocalDate;
 public class Ticket {
 	
 	private LocalDate date;
+	private ArrayList<FlightSeat> flightSeats;
 	
 	public Ticket() {
 		this.date = LocalDate.now();
+		this.flightSeats = new ArrayList<FlightSeat>();
 	}
 	
 	public LocalDate getDate() {
@@ -15,7 +17,6 @@ public class Ticket {
 	}
 	
 	public void addFlightSeat(FlightSeat fs) {
-		
 	}
 	
 	public float getPrice() {
