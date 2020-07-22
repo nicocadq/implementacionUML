@@ -10,6 +10,10 @@ public class Ticket {
 		this.date = LocalDate.now();
 	}
 	
+	public LocalDate getDate() {
+		return this.date;
+	}
+	
 	public void addFlightSeat(FlightSeat fs) {
 		
 	}
