@@ -8,6 +8,10 @@ public class Payment {
 		this.paymentStatus = PaymentStatus.PENDING;
 	}
 	
+	public PaymentStatus getPaymentStatus() {
+		return this.paymentStatus;
+	}
+	
 	public void setPaymentStatusPAYOUT() {
 		this.paymentStatus = PaymentStatus.PAYOUT;
 	}
