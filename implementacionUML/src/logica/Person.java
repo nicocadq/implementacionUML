@@ -13,6 +13,14 @@ public class Person {
 		this.tickets = new ArrayList<Ticket>();
 	}
 	
+	public String getName() {
+		return this.name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
 	public void addTicket(Ticket ticket) {
 		this.tickets.add(ticket);
 	}
