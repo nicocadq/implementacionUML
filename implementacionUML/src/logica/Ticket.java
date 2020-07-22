@@ -23,11 +23,11 @@ public class Ticket {
 	}
 	
 	public void cashPay() {
-		
+		new Cash();
 	}
 	
-	public void cardPay() {
-		
+	public void cardPay(int numCard, int amountPayments) {
+		new Card(numCard, amountPayments);
 	}
 	
 	public float getFinalPrice() {
