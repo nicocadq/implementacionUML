@@ -5,9 +5,27 @@ public class FlightSeat {
 	private Seat seat;
 	private float amount;
 
-	public FlightSeat(float amount) {
+	public FlightSeat(Ticket ticket, Seat seat, float amount) {
 		super();
+		this.ticket = ticket;
+		this.seat = seat;
 		this.amount = amount;
+	}
+	
+	public Ticket getTicket() {
+		return ticket;
+	}
+
+	public void setTicket(Ticket ticket) {
+		this.ticket = ticket;
+	}
+
+	public Seat getSeat() {
+		return seat;
+	}
+
+	public void setSeat(Seat seat) {
+		this.seat = seat;
 	}
 
 	public float getAmount() {
@@ -17,12 +35,15 @@ public class FlightSeat {
 	public void setAmount(float amount) {
 		this.amount = amount;
 	}
+	
 	public boolean reservado() {
 		return false;	
 	}
+	
 	public int getNumAsiento() {
 		return 0;
 	}
+	
 	public void cancelar() {
 		
 	}

@@ -8,32 +8,61 @@ public class Flight {
 	private Airport[] codeAirport = new Airport[2];
 	private ArrayList<FlightSeat> seatFlight = new ArrayList<FlightSeat>();
 	private int code;
-	private LocalDate fecha;
+	private LocalDate date;
 	
-	public Flight(int codigo, LocalDate fecha) {
+	public Flight(Airport[] codeAirport, ArrayList<FlightSeat> seatFlight, int code, LocalDate date) {
 		super();
-		this.code = codigo;
-		this.fecha = fecha;
+		this.codeAirport = codeAirport;
+		this.seatFlight = seatFlight;
+		this.code = code;
+		this.date = date;
 	}
-	public int getCodigo() {
+
+	public Airport[] getCodeAirport() {
+		return codeAirport;
+	}
+
+
+	public void setCodeAirport(Airport[] codeAirport) {
+		this.codeAirport = codeAirport;
+	}
+
+
+	public ArrayList<FlightSeat> getSeatFlight() {
+		return seatFlight;
+	}
+
+
+	public void setSeatFlight(ArrayList<FlightSeat> seatFlight) {
+		this.seatFlight = seatFlight;
+	}
+
+
+	public int getCode() {
 		return code;
 	}
-	public void setCodigo(int codigo) {
+
+	public LocalDate getDate() {
+		return date;
+	}
+
+	public void setDate(LocalDate date) {
+		this.date = date;
+	}
+
+	public void setCode(int code) {
 		this.code = code;
 	}
-	public LocalDate getFecha() {
-		return fecha;
-	}
-	public void setFecha(LocalDate fecha) {
-		this.fecha = fecha;
-	}
-	public boolean esBuscado(String ae1,String ae2, LocalDate fecha) {
+	
+	public boolean esBuscado(String ae1,String ae2, LocalDate date) {
 		return false;
 	}
-	public FlightData getDataVuelo() {
+	
+	public DataFlight getDataVuelo() {
 		return null;
 	}
-	public FlightSeat getAsientoVuelo(int asiento) {
+	
+	public FlightSeat getAsientoVuelo(int seat) {
 		return null;
 	}
 }
