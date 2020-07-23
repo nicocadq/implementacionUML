@@ -3,23 +3,28 @@ package logica;
 import java.util.ArrayList;
 
 public class FlightData {
-	private int codigo;
-	private ArrayList<Integer> asientos = new ArrayList<Integer>();
-	public FlightData(int codigo, ArrayList<Integer> asientos) {
+	private int code;
+	private ArrayList<Integer> seats = new ArrayList<Integer>();
+	
+	public FlightData(int code, ArrayList<Integer> seats) {
 		super();
-		this.codigo = codigo;
-		this.asientos = asientos;
+		this.code = code;
+		this.seats = seats;
 	}
-	public int getCodigo() {
-		return codigo;
+
+	public int getCode() {
+		return code;
 	}
-	public void setCodigo(int codigo) {
-		this.codigo = codigo;
+
+	public void setCode(int code) {
+		this.code = code;
 	}
-	public ArrayList<Integer> getAsientos() {
-		return asientos;
+
+	public ArrayList<Integer> getSeats() {
+		return seats;
 	}
-	public void setAsientos(ArrayList<Integer> asientos) {
-		this.asientos = asientos;
+
+	public void setSeats(ArrayList<Integer> seats) {
+		this.seats = seats;
 	}
 }
