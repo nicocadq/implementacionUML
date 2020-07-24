@@ -39,6 +39,11 @@ public class FlightController {
 	public void setAirplanes(ArrayList<Airplane> airplanes) {
 		airplanes = airplanes;
 	}
+	
+	public int newFlight(Airport a1, Airport a2, LocalDate date) {
+		return 0;
+		
+	}
 
 	public void assignFlight(int flightCode, String enrolment) {
 
